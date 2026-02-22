@@ -3,46 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PrivacyNotIncluded - Pau i Sergi</title>
+  <title>Privacy Not Included - Pau i Sergi</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f6f9;
       margin: 0;
-      padding: 0;
       text-align: center;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
-      padding: 30px;
+      padding: 40px 20px;
     }
 
     section {
-      padding: 30px 20px;
-      max-width: 800px;
+      padding: 40px 20px;
+      max-width: 1000px;
       margin: auto;
     }
 
-    .objecte {
-      background-color: white;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .contenidor {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
     }
 
-    h2 {
+    .card {
+      background: white;
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card a {
+      text-decoration: none;
       color: #2c3e50;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .card a:hover {
+      color: #3498db;
     }
 
     footer {
       background-color: #2c3e50;
       color: white;
       padding: 15px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -50,36 +75,27 @@
 <body>
 
   <header>
-    <h1>Som en Pau i en Sergi</h1>
-    <p>Analitzem dos objectes de la pàgina "Privacy Not Included"</p>
+    <h1>Privacy Not Included</h1>
+    <p>Anàlisi de dispositius tecnològics - Pau i Sergi</p>
   </header>
 
   <section>
-    <h2>Sobre el projecte</h2>
-    <p>
-      Aquesta és la nostra pàgina web on hem decidit escollir dos objectes físics
-      de la pàgina "Privacy Not Included" i parlar una mica sobre aquests,
-      analitzant la seua privacitat i seguretat.
-    </p>
-  </section>
+    <h2>Els nostres objectes analitzats</h2>
 
-  <section>
-    <h2>Objecte 1</h2>
-    <div class="objecte">
-      <h3>Nom del producte</h3>
-      <p>
-        Ací podeu escriure la informació del primer objecte.
-        Parleu sobre què fa, si és segur, quins riscos té, etc.
-      </p>
-    </div>
+    <div class="contenidor">
 
-    <h2>Objecte 2</h2>
-    <div class="objecte">
-      <h3>Nom del producte</h3>
-      <p>
-        Ací podeu escriure la informació del segon objecte.
-        Expliqueu també els seus problemes de privacitat o punts forts.
-      </p>
+      <!-- PRODUCTO 1 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/250x150" alt="Apple Watch">
+        <a href="amazonfiretv.html">Amazon Fire TV</a>
+      </div>
+
+      <!-- PRODUCTO 2 -->
+      <div class="card">
+        <img src="https://via.placeholder.com/250x150" alt="Alexa">
+        <a href="applewatch.html">Apple Watch</a>
+      </div>
+
     </div>
   </section>
 
